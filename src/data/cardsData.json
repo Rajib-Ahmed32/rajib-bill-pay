@@ -1,0 +1,50 @@
+[
+  {
+    "id": "card-1",
+    "bank_name": "Dutch-Bangla Bank",
+    "card_number": "**** **** **** 1024",
+    "card_type": "Visa",
+    "balance": 10000,
+    "card_image": "https://i.ibb.co/v4DhHZv/dbbl-card.png"
+  },
+  {
+    "id": "card-2",
+    "bank_name": "bKash",
+    "card_number": "**** **** **** 9898",
+    "card_type": "Mobile",
+    "balance": 8500,
+    "card_image": "https://i.ibb.co/pJ9m9gK/bkash-card.png"
+  },
+  {
+    "id": "card-3",
+    "bank_name": "Nagad",
+    "card_number": "**** **** **** 7777",
+    "card_type": "Mobile",
+    "balance": 5000,
+    "card_image": "https://i.ibb.co/LJ6gZdK/nagad-card.png"
+  },
+  {
+    "id": "card-4",
+    "bank_name": "Rocket",
+    "card_number": "**** **** **** 4444",
+    "card_type": "Mobile",
+    "balance": 6200,
+    "card_image": "https://i.ibb.co/L0Df5Pq/rocket-card.png"
+  },
+  {
+    "id": "card-5",
+    "bank_name": "City Bank",
+    "card_number": "**** **** **** 3333",
+    "card_type": "MasterCard",
+    "balance": 12000,
+    "card_image": "https://i.ibb.co/d2LMP8r/card-icon.png"
+  },
+  {
+    "id": "card-6",
+    "bank_name": "Trust Bank",
+    "card_number": "**** **** **** 1234",
+    "card_type": "Visa",
+    "balance": 7000,
+    "card_image": "https://i.ibb.co/mXVKXZq/trust-card.png"
+  }
+]

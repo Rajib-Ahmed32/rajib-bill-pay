@@ -1,0 +1,30 @@
+// src/routes/router.jsx
+import { createBrowserRouter } from "react-router-dom";
+import MainLayout from "../layout/MainLayout";
+import Home from "../pages/Home";
+import Login from "../pages/Login";
+import Register from "../pages/Register";
+import Bills from "../pages/Bills";
+import BillDetails from "../pages/BillDetails";
+import MyProfile from "../pages/MyProfile";
+import UpdateProfile from "../pages/UpdateProfile";
+import NotFound from "../pages/NotFound";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <MainLayout />,
+    children: [
+      { path: "", element: <Home /> },
+      { path: "/login", element: <Login /> },
+      { path: "/register", element: <Register /> },
+      { path: "/bills", element: <Bills /> },
+      { path: "/bills/:id", element: <BillDetails /> },
+      { path: "/my-profile", element: <MyProfile /> },
+      { path: "/my-profile/update", element: <UpdateProfile /> },
+      { path: "*", element: <NotFound /> },
+    ],
+  },
+]);
+
+export default router;
