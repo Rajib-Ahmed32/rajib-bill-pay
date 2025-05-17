@@ -7,9 +7,10 @@ const MainLayout = () => {
   return (
     <div>
       <Header />
-      <main className="flex min-h-screen justify-center items-center">
+      <main className="flex min-h-screen justify-center items-start overflow-y-auto">
         <Outlet />
       </main>
+
       <Footer />
     </div>
   );
