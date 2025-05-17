@@ -7,7 +7,9 @@ const MainLayout = () => {
   return (
     <div>
       <Header />
-      <Outlet />
+      <main className="flex min-h-screen justify-center items-center">
+        <Outlet />
+      </main>
       <Footer />
     </div>
   );
