@@ -1,12 +1,36 @@
-// src/pages/Login.jsx
-import React from "react";
+// pages/Login.jsx
+import { toast } from "sonner";
+import React, { useRef } from "react";
 import { Label } from "../ui/components/ui/label";
 import { Input } from "../ui/components/ui/input";
 import { Button } from "../ui/components/ui/button";
-import { Link } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
+import { useAuthActions } from "../hooks/useAuthActions";
 
 const Login = () => {
+  const { login, googleLogin, sendResetEmail } = useAuthActions();
+  const emailRef = useRef();
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    const email = emailRef.current.value.trim();
+    const password = e.target.password.value.trim();
+    login(email, password);
+  };
+
+  const handleForgotPassword = async () => {
+    const email = emailRef.current?.value.trim();
+    if (!email) {
+      return toast.error("Please enter your email to reset password.");
+    }
+    try {
+      await sendResetEmail(email);
+      toast.success("Password reset link sent to your email.");
+    } catch (error) {
+      toast.error("Failed to send reset email: " + error.message);
+    }
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center dark:bg-gray-900 px-4">
       <div className="w-full max-w-2xl bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-200 dark:border-gray-700 p-10">
@@ -14,7 +38,7 @@ const Login = () => {
           User Login
         </h1>
 
-        <form className="space-y-6" noValidate>
+        <form onSubmit={handleLogin} className="space-y-6" noValidate>
           <div className="space-y-2">
             <Label htmlFor="email">Your Email</Label>
             <Input
@@ -23,6 +47,7 @@ const Login = () => {
               id="email"
               required
               placeholder="name@company.com"
+              ref={emailRef}
             />
           </div>
 
@@ -38,12 +63,13 @@ const Login = () => {
           </div>
 
           <div className="text-right text-sm">
-            <Link
-              to="/forgot-password"
+            <button
+              type="button"
+              onClick={handleForgotPassword}
               className="text-blue-600 hover:underline"
             >
               Forgot Password?
-            </Link>
+            </button>
           </div>
 
           <Button type="submit" className="w-full">
@@ -54,7 +80,7 @@ const Login = () => {
             type="button"
             variant="outline"
             className="w-full flex items-center justify-center gap-2"
-            onClick={() => console.log("Google Sign-In")}
+            onClick={googleLogin}
           >
             <FcGoogle className="w-5 h-5" />
             Continue with Google
@@ -62,12 +88,12 @@ const Login = () => {
 
           <p className="text-sm text-center text-gray-500 dark:text-gray-400">
             Don’t have an account yet?{" "}
-            <Link
-              to="/register"
+            <a
+              href="/register"
               className="font-medium text-blue-600 hover:underline"
             >
               Sign up
-            </Link>
+            </a>
           </p>
         </form>
       </div>
