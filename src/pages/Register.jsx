@@ -14,12 +14,16 @@ const Register = () => {
 
   const handleRegister = (e) => {
     e.preventDefault();
-    const name = e.target.name.value.trim();
-    const email = e.target.email.value.trim();
-    const photoURL = e.target.photoURL.value.trim();
-    const password = e.target.password.value.trim();
+
+    const form = e.target;
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const photoURL = form.photoURL.value.trim();
+    const password = form.password.value.trim();
 
     register({ name, email, photoURL, password });
+
+    form.reset();
   };
 
   const handleGoogleRegister = async () => {
