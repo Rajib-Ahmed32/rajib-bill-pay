@@ -40,7 +40,7 @@ const BillCard = ({ bill }) => {
           </div>
         </div>
 
-        <div className="md:basis-1/3 w-full md:w-auto">
+        <div className="w-full md:w-auto">
           <p className="text-base text-[#050521]">
             <span className="font-semibold">Amount:</span> {bill.amount} Taka
           </p>
