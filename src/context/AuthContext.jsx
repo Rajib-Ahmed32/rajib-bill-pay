@@ -1,5 +1,5 @@
 // src/context/AuthContext.jsx
-import React, { createContext, useReducer, useEffect } from "react";
+import React, { createContext, useReducer, useContext, useEffect } from "react";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -49,3 +49,4 @@ const AuthProvider = ({ children }) => {
 };
 
 export default AuthProvider;
+export const useAuthContext = () => useContext(AuthContext);

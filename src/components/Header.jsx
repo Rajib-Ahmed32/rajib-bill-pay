@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Logo from "../components/Logo";
 import { AuthContext } from "../context/AuthContext";
+import { useBillContext } from "../context/BillContext"; 
 import { toast } from "sonner";
 import { signOut } from "firebase/auth";
 import { auth } from "../firebase/firebase";
@@ -19,10 +20,16 @@ import { LogOut, User, Wallet } from "lucide-react";
 
 const Header = () => {
   const { user, dispatch } = useContext(AuthContext);
+  const { balance } = useBillContext(); 
   const navigate = useNavigate();
 
   const handleLogout = async () => {
     try {
+      if (user?.email) {
+        localStorage.removeItem(`balance_${user.email}`);
+        localStorage.removeItem(`bills_${user.email}`);
+      }
+
       await signOut(auth);
       dispatch({ type: "LOGOUT" });
       toast.success("Logged out successfully!");
@@ -65,7 +72,10 @@ const Header = () => {
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <img
-                    src={user.photoURL || "https://i.ibb.co/vB1gqDL/avatar.png"}
+                    src={
+                      user.photoURL ||
+                      "https://randomuser.me/api/portraits/lego/1.jpg"
+                    }
                     alt="User Avatar"
                     className="w-10 h-10 rounded-full border-2 border-[#ca970b] hover:scale-105 transition cursor-pointer shadow-lg"
                   />
@@ -89,7 +99,7 @@ const Header = () => {
                     <span className="text-sm">
                       Balance:{" "}
                       <span className="font-semibold text-green-700">
-                        10000 BDT
+                        {balance.toLocaleString()} BDT
                       </span>
                     </span>
                   </DropdownMenuItem>

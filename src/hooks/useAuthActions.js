@@ -13,10 +13,10 @@ export const useAuthActions = () => {
     try {
       const userCredential = await signIn(email, password);
       dispatch({ type: "SET_USER", payload: userCredential.user });
-      toast.success("Login successful!");
+      toast.success("Welcome back! Logged in successfully.");
       navigate("/");
     } catch (error) {
-      toast.error("Invalid email or password");
+      toast.error("Invalid credentials. Please try again.");
     }
   };
 
@@ -24,10 +24,10 @@ export const useAuthActions = () => {
     try {
       const userCredential = await signInWithGoogle();
       dispatch({ type: "SET_USER", payload: userCredential.user });
-      toast.success("Logged in with Google!");
+      toast.success("Signed in with Google successfully!");
       navigate("/");
     } catch (error) {
-      toast.error("Google Sign-In failed");
+      toast.error("Google sign-in failed. Please try again later.");
     }
   };
 

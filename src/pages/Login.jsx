@@ -26,7 +26,7 @@ const Login = () => {
 
   useEffect(() => {
     if (location.state?.showToast) {
-      toast.error("You need to be logged in to view this content");
+      toast.error("Please log in to access this page.");
       window.history.replaceState({}, document.title);
     }
   }, [location]);
@@ -34,13 +34,13 @@ const Login = () => {
   const handleForgotPassword = async () => {
     const email = emailRef.current?.value.trim();
     if (!email) {
-      return toast.error("Please enter your email to reset password.");
+      return toast.error("Enter your email to receive a password reset link.");
     }
     try {
       await sendResetEmail(email);
-      toast.success("Password reset link sent to your email.");
+      toast.success("We've sent a password reset link to your email.");
     } catch (error) {
-      toast.error("Failed to send reset email: " + error.message);
+      toast.error(`Oops! Couldn't send reset link. ${error.message}`);
     }
   };
 

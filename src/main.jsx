@@ -4,9 +4,12 @@ import { RouterProvider } from "react-router-dom";
 import router from "./routes/router";
 import "./index.css";
 import AuthProvider from "./context/AuthContext";
+import { BillProvider } from "./context/BillContext";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <AuthProvider>
-    <RouterProvider router={router} />
+    <BillProvider>
+      <RouterProvider router={router} />
+    </BillProvider>
   </AuthProvider>
 );

@@ -2,7 +2,7 @@
   {
     "id": 1,
     "bill_type": "electricity",
-    "icon": "https://i.ibb.co/TWKMsnJ/electricity-icon.png",
+    "icon": "https://upload.wikimedia.org/wikipedia/en/f/f3/DESCO_logo.png",
     "organization": "DESCO",
     "amount": 1890,
     "due_date": "2025-06-01T00:00:00.000Z",
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "bill_type": "gas",
-    "icon": "https://i.ibb.co/pbdP2gx/gas-icon.png",
+    "icon": "https://upload.wikimedia.org/wikipedia/en/f/f4/Titas_Gas_Logo.png",
     "organization": "Titas Gas",
     "amount": 1488,
     "due_date": "2025-06-05T00:00:00.000Z",
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "bill_type": "internet",
-    "icon": "https://i.ibb.co/KFxnDTw/internet-icon.png",
+    "icon": "https://link3.net/assets/img/logo.png",
     "organization": "Link3",
     "amount": 1450,
     "due_date": "2025-06-08T00:00:00.000Z",
@@ -29,7 +29,7 @@
   {
     "id": 4,
     "bill_type": "water",
-    "icon": "https://i.ibb.co/fk5psDp/water-icon.png",
+    "icon": "https://upload.wikimedia.org/wikipedia/en/0/0e/WASA_Logo_Dhaka.png",
     "organization": "WASA",
     "amount": 950,
     "due_date": "2025-06-03T00:00:00.000Z",
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "bill_type": "credit card",
-    "icon": "https://i.ibb.co/d2LMP8r/card-icon.png",
+    "icon": "https://www.thecitybank.com/assets/frontend/images/logo.png",
     "organization": "City Bank",
     "amount": 2800,
     "due_date": "2025-06-10T00:00:00.000Z",
@@ -47,7 +47,7 @@
   {
     "id": 6,
     "bill_type": "tuition",
-    "icon": "https://i.ibb.co/TrJLp6p/tuition-icon.png",
+    "icon": "https://scholars.edu.bd/wp-content/uploads/2021/08/cropped-School-Logo-1.png",
     "organization": "Scholars School",
     "amount": 2300,
     "due_date": "2025-06-15T00:00:00.000Z",
@@ -56,7 +56,7 @@
   {
     "id": 7,
     "bill_type": "mobile",
-    "icon": "https://i.ibb.co/1nqx2fK/mobile-icon.png",
+    "icon": "https://www.grameenphone.com/sites/default/files/gp_logo_0.png",
     "organization": "Grameenphone",
     "amount": 900,
     "due_date": "2025-06-09T00:00:00.000Z",
@@ -65,7 +65,7 @@
   {
     "id": 8,
     "bill_type": "tv",
-    "icon": "https://i.ibb.co/9sHmTvP/tv-icon.png",
+    "icon": "https://akashdth.com/themes/akash/assets/images/logo.png",
     "organization": "Akash DTH",
     "amount": 850,
     "due_date": "2025-06-11T00:00:00.000Z",
@@ -74,7 +74,7 @@
   {
     "id": 9,
     "bill_type": "insurance",
-    "icon": "https://i.ibb.co/sF2sZm7/insurance-icon.png",
+    "icon": "https://pragatilife.com/assets/images/logo.png",
     "organization": "Pragati Life",
     "amount": 2200,
     "due_date": "2025-06-12T00:00:00.000Z",
@@ -83,7 +83,7 @@
   {
     "id": 10,
     "bill_type": "loan",
-    "icon": "https://i.ibb.co/PjXzBn0/loan-icon.png",
+    "icon": "https://www.bracbank.com/storage/app/media/logo.png",
     "organization": "BRAC Bank",
     "amount": 3000,
     "due_date": "2025-06-18T00:00:00.000Z",
@@ -92,7 +92,7 @@
   {
     "id": 11,
     "bill_type": "maintenance",
-    "icon": "https://i.ibb.co/wNsxpgC/maintenance-icon.png",
+    "icon": "https://cdn-icons-png.flaticon.com/512/2936/2936840.png",
     "organization": "Apartment Committee",
     "amount": 1200,
     "due_date": "2025-06-20T00:00:00.000Z",
@@ -101,7 +101,7 @@
   {
     "id": 12,
     "bill_type": "streaming",
-    "icon": "https://i.ibb.co/xGxnwKb/streaming-icon.png",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
     "organization": "Netflix",
     "amount": 999,
     "due_date": "2025-06-22T00:00:00.000Z",

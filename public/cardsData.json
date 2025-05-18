@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "bank_name": "City Bank",
+    "card_type": "Visa",
+    "card_number": "**** **** **** 1234"
+  },
+  {
+    "id": 2,
+    "bank_name": "BRAC Bank",
+    "card_type": "MasterCard",
+    "card_number": "**** **** **** 5678"
+  },
+  {
+    "id": 3,
+    "bank_name": "Dutch-Bangla Bank",
+    "card_type": "Visa",
+    "card_number": "**** **** **** 9012"
+  },
+  {
+    "id": 4,
+    "bank_name": "Eastern Bank Ltd.",
+    "card_type": "Visa",
+    "card_number": "**** **** **** 3456"
+  },
+  {
+    "id": 5,
+    "bank_name": "Prime Bank",
+    "card_type": "MasterCard",
+    "card_number": "**** **** **** 7890"
+  },
+  {
+    "id": 6,
+    "bank_name": "Standard Chartered",
+    "card_type": "Visa",
+    "card_number": "**** **** **** 2345"
+  },
+  {
+    "id": 7,
+    "bank_name": "HSBC Bangladesh",
+    "card_type": "MasterCard",
+    "card_number": "**** **** **** 6789"
+  },
+  {
+    "id": 8,
+    "bank_name": "National Bank",
+    "card_type": "Visa",
+    "card_number": "**** **** **** 0123"
+  },
+  {
+    "id": 9,
+    "bank_name": "Mutual Trust Bank",
+    "card_type": "MasterCard",
+    "card_number": "**** **** **** 4567"
+  },
+  {
+    "id": 10,
+    "bank_name": "Sonali Bank",
+    "card_type": "Visa",
+    "card_number": "**** **** **** 8901"
+  }
+]
