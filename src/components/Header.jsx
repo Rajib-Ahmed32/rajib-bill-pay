@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Logo from "../components/Logo";
 import { AuthContext } from "../context/AuthContext";
-import { useBillContext } from "../context/BillContext"; 
+import { useBillContext } from "../context/BillContext";
 import { toast } from "sonner";
 import { signOut } from "firebase/auth";
 import { auth } from "../firebase/firebase";
@@ -20,7 +20,7 @@ import { LogOut, User, Wallet } from "lucide-react";
 
 const Header = () => {
   const { user, dispatch } = useContext(AuthContext);
-  const { balance } = useBillContext(); 
+  const { balance } = useBillContext();
   const navigate = useNavigate();
 
   const handleLogout = async () => {
@@ -45,7 +45,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-20">
           <Logo />
 
-          <nav className="hidden md:flex gap-8 font-semibold text-[#050521]">
+          <nav className="flex gap-3 md:gap-6 font-semibold text-[#050521]">
             <Link to="/bills" className="hover:text-[#ca970b] transition">
               Bills
             </Link>

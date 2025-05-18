@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Secure Transactions",
+    "description": "Your money is safe with our top-tier encryption.",
+    "image": "/images/secure.jpg"
+  },
+  {
+    "title": "Fast Mobile Payments",
+    "description": "Experience lightning-fast transactions anytime, anywhere.",
+    "image": "/images/fast-pay.jpg"
+  },
+  {
+    "title": "Trusted Partner Banks",
+    "description": "We’re connected to 20+ major banks across the country.",
+    "image": "/images/trusted-partner.jpg"
+  },
+  {
+    "title": "Pay Utility Bills Easily",
+    "description": "Water, electricity, gas – all in one place.",
+    "image": "/images/utility-bill.jpg"
+  },
+  {
+    "title": "24/7 Support",
+    "description": "Our support team is always here to help you out.",
+    "image": "/images/global-support.png"
+  },
+  {
+    "title": "Manage Your Accounts",
+    "description": "View and control all your accounts in one dashboard.",
+    "image": "/images/manage-account.png"
+  },
+  {
+    "title": "Instant Notifications",
+    "description": "Stay updated with real-time alerts on transactions.",
+    "image": "/images/notification.png"
+  },
+  {
+    "title": "Easy Fund Transfers",
+    "description": "Send money instantly to any bank or mobile wallet.",
+    "image": "/images/fund-transfer.png"
+  },
+  {
+    "title": "Personalized Offers",
+    "description": "Get exclusive deals and discounts tailored for you.",
+    "image": "/images/personal-offers.jpg"
+  }
+]

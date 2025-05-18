@@ -43,7 +43,6 @@ const MyProfile = () => {
               </AvatarFallback>
             </Avatar>
 
-            {/* Info */}
             <div className="text-center md:text-left space-y-4 flex-1">
               <div>
                 <p className="text-xs uppercase text-gray-700">Name</p>

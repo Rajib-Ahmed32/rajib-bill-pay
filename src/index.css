@@ -72,3 +72,14 @@ body {
   background-color: #f2f3f8;
   font-family: "Poppins", sans-serif;
 }
+
+.swiper-pagination-bullet {
+  background: white;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: #3b82f6;
+  opacity: 1;
+}
