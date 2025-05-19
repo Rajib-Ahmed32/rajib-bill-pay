@@ -4,21 +4,21 @@ const teamMembers = [
     position: "Frontend developer",
     description:
       "Rajib crafts responsive UIs and ensures pixel-perfect React components.",
-    image: "/images/team.jpeg",
+    image: "/images/frontend.jpg",
   },
   {
     name: "Ayesha Siddiqua",
     position: "UI/UX Designer",
     description:
       "Ayesha designs intuitive and user-centered banking experiences.",
-    image: "/images/team.jpeg",
+    image: "/images/ux-ui.jpg",
   },
   {
     name: "Tariqul Islam",
     position: "Backend Developer",
     description:
       "Tariqul builds secure APIs and manages our core banking logic.",
-    image: "/images/team.jpeg",
+    image: "/images/backend.png",
   },
   {
     name: "Shamima Nahar",

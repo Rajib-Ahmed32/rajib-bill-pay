@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import { Outlet } from "react-router-dom";
-import { Footer } from "../components/Footer";
+import Footer from "../components/Footer";
 import { Toaster } from "sonner";
 
 const MainLayout = () => {
@@ -12,7 +12,9 @@ const MainLayout = () => {
       <main className="">
         <Outlet />
       </main>
-      <Footer />
+      <footer className="mt-[50px] md:mt-[100px]">
+        <Footer />
+      </footer>
     </div>
   );
 };

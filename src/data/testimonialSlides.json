@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Amina Khatun",
+    "location": "Sylhet, Bangladesh",
+    "message": "This app has made banking so easy! I can send money to my family from anywhere without standing in line.",
+    "bgColor": "#6366F1",
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "name": "Rafiqul Islam",
+    "location": "Dhaka, Bangladesh",
+    "message": "Fast, reliable, and secure. I’ve been using it for my small business transactions daily.",
+    "bgColor": "#0F172A",
+    "rating": 4
+  },
+  {
+    "id": 3,
+    "name": "Nasima Begum",
+    "location": "Chattogram, Bangladesh",
+    "message": "I love how everything is in Bangla and so easy to understand. Truly built for us.",
+    "bgColor": "#1E293B",
+    "rating": 5
+  },
+  {
+    "id": 4,
+    "name": "Mahbub Alam",
+    "location": "Barishal, Bangladesh",
+    "message": "From utility bill payments to mobile recharge, I do it all from one app. Amazing!",
+    "bgColor": "#4F46E5",
+    "rating": 4
+  }
+]

@@ -2,7 +2,7 @@ import teamMembers from "../data/teamMembers";
 
 export default function TeamSection() {
   return (
-    <section className="bg-white flex justify-center dark:bg-gray-900 py-9 md:py-14">
+    <section className="bg-[#eaeaea] flex justify-center dark:bg-gray-900 py-9 md:py-14">
       <div className="px-4 lg:px-0 mx-auto w-full max-w-6xl ">
         <div className="mx-auto space-y-4 max-w-screen-sm text-center">
           <h2 className="text-3xl tracking-tight font-extrabold text-[#050521] dark:text-white">

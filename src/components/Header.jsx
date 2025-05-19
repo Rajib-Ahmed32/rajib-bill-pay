@@ -43,7 +43,19 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-white shadow-sm">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-20">
-          <Logo />
+          <div>
+            <Link to="/" className="block md:hidden">
+              <img
+                src="/images/billpay.svg"
+                alt="Mobile Banking Logo"
+                className="w-10 h-10"
+              />
+            </Link>
+
+            <div className="hidden md:block">
+              <Logo />
+            </div>
+          </div>
 
           <nav className="flex gap-3 md:gap-6 font-semibold text-[#050521]">
             <Link to="/bills" className="hover:text-[#ca970b] transition">

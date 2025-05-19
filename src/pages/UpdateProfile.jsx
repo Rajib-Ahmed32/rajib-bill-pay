@@ -23,7 +23,7 @@ const UpdateProfile = () => {
   };
 
   return (
-    <section className="px-4 w-[80%] md:w-[50%]  py-12 min-h-screen bg-slate-100 dark:bg-slate-900 flex justify-center items-center">
+    <section className="px-4   py-12 min-h-screen bg-slate-100 dark:bg-slate-900 flex justify-center items-center">
       <Card className="w-full max-w-2xl bg-white/50 dark:bg-slate-800/50 backdrop-blur-md border border-white/30 dark:border-slate-700/30 shadow-xl rounded-2xl p-6 md:p-10">
         <CardHeader>
           <CardTitle className="text-2xl md:text-3xl text-center font-semibold text-gray-900 dark:text-white">

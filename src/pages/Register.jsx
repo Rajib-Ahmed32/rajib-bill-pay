@@ -38,8 +38,8 @@ const Register = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-start justify-center px-4 py-10 overflow-y-auto">
-      <div className="w-full max-w-xl bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-200 dark:border-gray-700 p-6 md:p-8 max-h-[90vh] overflow-y-auto">
+    <section className="flex items-start justify-center px-4 py-14">
+      <div className="w-full max-w-lg bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-200 dark:border-gray-700 p-6 md:p-8 max-h-[90vh]">
         <h1 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-6">
           User Registration
         </h1>
