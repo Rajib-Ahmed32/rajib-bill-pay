@@ -1,5 +1,10 @@
-// src/context/AuthContext.jsx
-import React, { createContext, useReducer, useContext, useEffect } from "react";
+import React, {
+  createContext,
+  useReducer,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -15,10 +20,11 @@ export const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
   const [state, dispatch] = useReducer(authReducer, initialState);
-
+  const [authLoading, setAuthLoading] = useState(true);
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       dispatch({ type: "SET_USER", payload: currentUser });
+      setAuthLoading(false);
     });
     return () => unsubscribe();
   }, []);
@@ -36,6 +42,7 @@ const AuthProvider = ({ children }) => {
   const authData = {
     user: state.user,
     loading: state.loading,
+    authLoading,
     createUser,
     signIn,
     signInWithGoogle,

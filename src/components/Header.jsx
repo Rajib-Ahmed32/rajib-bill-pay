@@ -88,7 +88,7 @@ const Header = () => {
                       user.photoURL ||
                       "https://randomuser.me/api/portraits/lego/1.jpg"
                     }
-                    alt="User Avatar"
+                    alt="Avatar"
                     className="w-10 h-10 rounded-full border-2 border-[#ca970b] hover:scale-105 transition cursor-pointer shadow-lg"
                   />
                 </DropdownMenuTrigger>

@@ -59,7 +59,7 @@ const BillDetails = () => {
 
   return (
     <>
-      <Card className="max-w-4xl bg-[#f2f3f8] mx-auto mt-10 p-8 md:p-8 shadow-md rounded-xl">
+      <Card className="max-w-4xl bg-[#f2f3f8] mx-auto my-14 p-8 md:p-8 shadow-md md:rounded-xl">
         <div className="flex flex-col md:flex-row items-center md:gap-10">
           <BillImage
             organization={bill.organization}
