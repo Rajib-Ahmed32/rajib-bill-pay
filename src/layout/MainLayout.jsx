@@ -9,7 +9,7 @@ const MainLayout = () => {
     <div>
       <Toaster richColors position="top-right" />
       <Header />
-      <main className="flex min-h-screen justify-center items-start overflow-y-auto">
+      <main className="">
         <Outlet />
       </main>
       <Footer />

@@ -28,7 +28,7 @@ function BannerSlider() {
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/40 flex flex-col  justify-center items-center lg:items-start p-6 text-white">
-              <div className="w-[30%] md:w-[50%]">
+              <div className="">
                 <h2 className="text-2xl text-[#f2f3f8] font-bold">
                   {item.title}
                 </h2>
