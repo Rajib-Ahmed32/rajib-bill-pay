@@ -1,12 +1,66 @@
-# React + Vite
+# 💳 RajibBillPay
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, modern **bill payment web app** built with React, Firebase, Tailwind CSS, and Radix UI components. Users can manage bills, view payment history, and securely authenticate using Firebase Auth.
 
-Currently, two official plugins are available:
+🔗 **Live Site**: [willowy-boba-e0a751.netlify.app](https://willowy-boba-e0a751.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔐 Firebase login, registration, Google sign-in & password reset
+- 🧾 Dynamic bill management with card selection and payment tracking
+- 📊 Filterable bill list and responsive UI components
+- 💡 Dialogs, toasts, and feedback for smooth UX
+- 📱 Mobile-friendly with Swiper sliders and theme-aware design
+
+---
+
+## 🧰 Tech Stack
+
+- **React 19**, **Vite**
+- **Tailwind CSS** + `tailwind-variants`, `tailwindcss-animate`
+- **Firebase Auth**
+- **React Router DOM v7**
+- **Radix UI** components (Dialog, Toast, Select, etc.)
+- **Swiper.js**, **Lucide React**, **React Icons**
+- **Sonner** for beautiful toasts
+
+---
+
+## 📝 Recent Updates
+
+### 📅 May 20, 2025
+- Added `HowItWorks` section, `Footer`, subscription, and 404 page
+
+### 📅 May 19, 2025
+- About Us + Testimonials with Swiper integration  
+- Responsive Team section and dynamic Organization cards  
+- Enhanced `BannerSlider` with autoplay and pagination  
+- User Profile view & update functionality  
+- Bill details with card selection, Pay button logic, and confirmation dialog
+
+### 📅 May 18, 2025
+- Full bill management: filtering, tracking, and UI components  
+- Introduced `BillContext`, `BillCard`, and `BillFilterDropdown`  
+- Refactored auth logic and improved routing flow
+
+### 📅 May 17, 2025
+- Login, Register, Google sign-in, and password reset via Firebase  
+- Toast notifications and `useReducer`-based auth context
+
+### 📅 May 16, 2025
+- Base routing, utility components, and seeded JSON data
+
+### 📅 May 15, 2025
+- Initial project setup and folder structure defined
+
+---
+
+## 👨‍💻 Author
+
+**Rajib Ahmed**  
+🔗 [GitHub @Rajib-Ahmed32](https://github.com/Rajib-Ahmed32)
+
+---
+
